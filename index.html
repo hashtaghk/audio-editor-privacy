@@ -74,7 +74,7 @@
   <h1>Privacy Policy</h1>
   <p class="meta">
     Audio Editor for Android &middot; package <code>harix.ringtone.maker.music.editor.free</code><br>
-    Effective 18&nbsp;August&nbsp;2026 &middot; Last updated 18&nbsp;August&nbsp;2026
+    Effective 18&nbsp;August&nbsp;2026 &middot; Last updated 19&nbsp;August&nbsp;2026
   </p>
 
   <div class="lead">
@@ -100,6 +100,8 @@
   <ul>
     <li>Your audio and video files are <strong>never uploaded</strong> to our servers or to any third party.</li>
     <li>We do not read, index, or transmit the contents, filenames, or metadata of your media.</li>
+    <li>The app does not browse your video gallery. When you convert a video to audio, Android&rsquo;s own photo
+      picker asks you to choose one file, and the app receives access to that file alone.</li>
     <li>Edited files are written to your device&rsquo;s own storage (by default the
       <code>Download/AudioEditor</code> folder) and stay under your control.</li>
     <li>App settings such as your chosen language, theme colour and dark-mode preference are stored only in
@@ -174,9 +176,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><code>READ_MEDIA_AUDIO</code><br><code>READ_MEDIA_VIDEO</code></td>
-        <td>To list and open the audio and video files you choose to edit. On Android&nbsp;12 and older the
-          equivalent legacy storage permissions are used instead.</td>
+        <td><code>READ_MEDIA_AUDIO</code></td>
+        <td>To list and open the audio files you choose to edit. On Android&nbsp;12 and older the equivalent
+          legacy storage permission is used instead.</td>
+      </tr>
+      <tr>
+        <td><em>(none &mdash; system photo picker)</em></td>
+        <td>The &ldquo;Video to MP3&rdquo; feature uses Android&rsquo;s built-in photo picker, so the app asks for
+          <strong>no video permission at all</strong>. You choose one video and the app receives access to only
+          that file &mdash; it can never see the rest of your gallery.</td>
       </tr>
       <tr>
         <td><code>WRITE_SETTINGS</code></td>
