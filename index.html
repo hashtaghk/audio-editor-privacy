@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy &mdash; Audio Editor</title>
-<meta name="description" content="Privacy policy for the Audio Editor Android app by Harix DevCo, covering advertising, permissions, and your choices.">
+<meta name="description" content="Privacy policy for the Audio Editor Android app by Harix DevCo, covering advertising, crash reporting, permissions, and your choices.">
 <style>
   :root {
     --bg: #ffffff;
@@ -74,14 +74,16 @@
   <h1>Privacy Policy</h1>
   <p class="meta">
     Audio Editor for Android &middot; package <code>harix.ringtone.maker.music.editor.free</code><br>
-    Effective 18&nbsp;August&nbsp;2026 &middot; Last updated 19&nbsp;August&nbsp;2026
+    Effective 18&nbsp;October&nbsp;2026 &middot; Last updated 18&nbsp;October&nbsp;2026
   </p>
 
   <div class="lead">
     <p><strong>The short version.</strong> Audio Editor edits your files entirely on your device &mdash; your
     audio and video never leave your phone and are never uploaded to us or to anyone else. The app has no
-    accounts and no sign-in. The one thing that does reach outside your device is advertising: we show ads
-    through Google AdMob, and AdMob collects device-level data to select and measure those ads.</p>
+    accounts and no sign-in. Two things do reach outside your device: <strong>advertising</strong>, which we
+    show through Google AdMob and which collects device-level data to select and measure ads; and
+    <strong>crash reports</strong>, which Firebase Crashlytics sends to us when the app crashes so we can fix
+    the bug.</p>
   </div>
 
   <p>This policy explains what Audio Editor (&ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects,
@@ -90,8 +92,9 @@
   <h2>1. Who we are</h2>
   <p>Audio Editor is developed and published by <strong>Harix DevCo</strong>. For any privacy question or
   request, contact us at <a href="mailto:support@hashtaghk.com">support@hashtaghk.com</a>. We are the data
-  controller for the limited processing described below; Google acts as an independent controller for the
-  advertising data it collects.</p>
+  controller for the limited processing described below. Google acts as an independent controller for the
+  advertising data it collects, and as our processor for crash reports collected through Firebase
+  Crashlytics.</p>
 
   <h2>2. What stays on your device</h2>
   <p>All editing &mdash; trimming, merging, mixing, format conversion, speed and pitch changes, echo and equalizer
@@ -107,12 +110,14 @@
     <li>App settings such as your chosen language, theme colour and dark-mode preference are stored only in
       local app preferences on your device.</li>
   </ul>
-  <p>We operate no server, no account system, and no user database. Uninstalling the app removes its local
-  data from your device.</p>
+  <p>We operate no server, no account system, and no user database. The only data we receive is the crash
+  reports described in section&nbsp;7. Uninstalling the app removes its local data from your device.</p>
 
   <h2>3. Advertising</h2>
   <p>The app is free and is funded by advertising. We use <strong>Google AdMob</strong>
-  (Google Ireland Limited / Google LLC) to serve banner, native, interstitial and rewarded interstitial ads.</p>
+  (Google Ireland Limited / Google LLC) to serve banner, native, interstitial and app open ads. An app open ad
+  may appear while the app is starting or when you return to it; it is never shown while a conversion is
+  running.</p>
 
   <h3>What AdMob collects</h3>
   <p>To select, deliver, cap, measure and protect ads against fraud, the Google Mobile Ads SDK collects and
@@ -221,12 +226,26 @@
   </table>
   </div>
 
-  <h2>7. Analytics and crash reporting</h2>
-  <p>The app does <strong>not</strong> include an analytics or crash-reporting SDK. We do not track feature usage,
-  build behavioural profiles, or receive crash reports containing your data. Aggregate install and crash
-  statistics may still be shown to us by Google Play; those are provided by Google under
-  <a href="https://policies.google.com/privacy" rel="noopener">its own privacy policy</a> and are not linked to you
-  by us.</p>
+  <h2>7. Crash reporting and analytics</h2>
+  <p>We use <strong>Firebase Crashlytics</strong> (Google LLC) to find and fix crashes. When the app crashes, or
+  hits certain serious errors, Crashlytics sends a crash report the next time the app runs. A report contains:</p>
+  <ul>
+    <li>the <strong>technical details of the error</strong> &mdash; the stack trace showing where in the app&rsquo;s
+      code it failed, and the error message. An error message can occasionally include the name or location of
+      a file the app was working on at the time;</li>
+    <li><strong>device and app state</strong> &mdash; device model, Android version, app version, screen orientation,
+      free memory and storage, and whether the device was rooted;</li>
+    <li>a <strong>Crashlytics installation identifier</strong> &mdash; a random ID created when the app is installed, used
+      to count how many installs a crash affects. It is reset if you reinstall the app, and it is not your
+      Advertising ID.</li>
+  </ul>
+  <p>Crash reports <strong>never contain the contents of your audio or video files</strong>. We use them only to diagnose
+  and fix bugs; they are not used for advertising, profiling or tracking, and are not combined with advertising
+  data. Google processes them on our behalf and deletes them after 90&nbsp;days. See
+  <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a>.</p>
+  <p>The app does <strong>not</strong> include an analytics SDK: we do not track which features you use or build
+  behavioural profiles. Aggregate install and crash statistics are also shown to us by Google Play, under
+  <a href="https://policies.google.com/privacy" rel="noopener">Google&rsquo;s own privacy policy</a>.</p>
 
   <h2>8. Children</h2>
   <p>Audio Editor is a general-audience app and is not directed to children under 13 (or the equivalent minimum age
@@ -235,12 +254,12 @@
   contact us at <a href="mailto:support@hashtaghk.com">support@hashtaghk.com</a> and we will act on it promptly.</p>
 
   <h2>9. Data retention, security and transfers</h2>
-  <p>Because we run no servers, we hold no personal data to retain or delete. Data collected by Google for
-  advertising is retained and secured according to
-  <a href="https://policies.google.com/technologies/retention" rel="noopener">Google&rsquo;s data retention practices</a>,
-  and may be processed on servers outside your country, including in the United States, under the safeguards
-  described in Google&rsquo;s privacy documentation. Communication between the app and Google&rsquo;s ad servers is
-  encrypted in transit.</p>
+  <p>We run no servers of our own. Crash reports (section&nbsp;7) are stored in Firebase on our behalf and deleted
+  automatically after 90&nbsp;days. Data collected by Google for advertising is retained and secured according to
+  <a href="https://policies.google.com/technologies/retention" rel="noopener">Google&rsquo;s data retention practices</a>.
+  Both may be processed on servers outside your country, including in the United States, under the safeguards
+  described in Google&rsquo;s privacy documentation. All communication between the app and Google&rsquo;s servers
+  is encrypted in transit.</p>
 
   <h2>10. Your rights</h2>
   <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to the
@@ -249,15 +268,16 @@
   information is collected and to opt out of its sale or sharing &mdash; note that <strong>we do not sell or share
   personal information</strong> as those terms are defined under the CCPA/CPRA.</p>
   <p>Because the advertising data described in section&nbsp;3 is held by Google rather than by us, requests
-  concerning it are best directed to Google, or exercised through the device controls in section&nbsp;5. For
-  anything within our control, write to
+  concerning it are best directed to Google, or exercised through the device controls in section&nbsp;5. Crash
+  reports are not linked to your name, email or any account, so we usually cannot tell which reports came from
+  your device; they are deleted after 90&nbsp;days in any case. For anything within our control, write to
   <a href="mailto:support@hashtaghk.com">support@hashtaghk.com</a> and we will respond within 30&nbsp;days.</p>
 
   <h2>11. Third-party components</h2>
   <p>The app bundles open-source libraries that run entirely on your device and send no data anywhere, including
   FFmpeg (audio and video processing), ExoPlayer (playback), Glide (image loading) and Lottie (animations). The
-  only component that communicates over the network is the Google Mobile Ads SDK, together with Google&rsquo;s User
-  Messaging Platform used for the consent message.</p>
+  only components that communicate over the network are the Google Mobile Ads SDK, Google&rsquo;s User Messaging
+  Platform used for the consent message, and Firebase Crashlytics.</p>
 
   <h2>12. Changes to this policy</h2>
   <p>We may update this policy as the app changes or as legal requirements evolve. The &ldquo;Last updated&rdquo;
